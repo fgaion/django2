@@ -11,8 +11,12 @@
 <body>
     <div class="container">
         {% if produtos %}
-        <h1>Produtos</h1>
-
+        <h1>Sistema Django - Cadastro Produto e Envio de Contato</h1>
+        <br>
+        <a class="btn btn-info" href="{% url 'produto' %}">Novo Produto</a>
+        <a class="btn btn-info" href="{% url 'contato' %}">Contato</a>
+        <br><br>
+        <h2>Produtos</h2>
         <table class="table table-dark">
             <thead>
                 <tr>
