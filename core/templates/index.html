@@ -12,6 +12,7 @@
     <div class="container">
         {% if produtos %}
         <h1>Sistema Django - Cadastro Produto e Envio de Contato</h1>
+        <h3>Seja bem vindo {{ usuario }}</h3>
         <br>
         <a class="btn btn-info" href="{% url 'produto' %}">Novo Produto</a>
         <a class="btn btn-info" href="{% url 'contato' %}">Contato</a>

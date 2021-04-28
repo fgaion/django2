@@ -5,6 +5,7 @@ from core.models import Produto
 
 def index(request):
     context = {
+        'usuario' : str(request.user),
         'produtos': Produto.objects.all()
     }
     return render(request, 'index.html', context)
