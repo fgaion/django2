@@ -4,8 +4,9 @@ from core.forms import ContatoForm, ProdutoModelForm
 from core.models import Produto
 
 def index(request):
+    usuario = str(request.user)
     context = {
-        'usuario' : str(request.user),
+        'usuario' : usuario,
         'produtos': Produto.objects.all()
     }
     return render(request, 'index.html', context)
